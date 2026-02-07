@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Shadows+Into+Light&display=swap" rel="stylesheet">    
+</head>
+
+<style>
+nav{
+    padding: 20px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+}
+li {
+    display: list-item;
+    unicode-bidi: isolate;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.fira-sans-medium {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.shadows-into-light-regular {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.homemade-apple-regular {
+  font-family: "Homemade Apple", cursive;
+  font-size: 80%;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+.title {
+  border-bottom: 1.5px solid rgb(63, 63, 63) ;
+  padding-bottom: 0.2em;
+}
+.adjustcenter{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.sectionspe{
+    font-size: medium;
+}
+.hero {
+  padding: 24px 20px;
+  background: #fafafa;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  color: #2f2f2f;
+  letter-spacing: 0.02em;
+  padding-bottom: 6px;
+}
+
+.tagline::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 1.5px;
+  margin: 8px auto 0;
+  background: #3f3f3f;
+  opacity: 0.5;
+}
+
+.tagline span {
+  margin-left: 4px;
+  font-size: 1.25em;
+}
+.recipe {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.recipe-site {
+  color: burlywood;
+  margin-bottom: 20px;
+}
+
+.recipe-card {
+  background: #fafafa;
+  padding: 24px;
+  border-radius: 10px;
+}
+
+.recipe-title {
+  color: rgb(185, 140, 81);
+  margin-bottom: 12px;
+}
+
+.recipe-img {
+  width: 100%;
+  max-width: 420px;
+  display: block;
+  margin: 16px auto;
+  border-radius: 8px;
+}
+
+.recipe-desc {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.recipe h3 {
+  color: burlywood;
+  margin-top: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+}
+
+.ingredients {
+  margin-top: 8px;
+  color: #444;
+}
+
+.directions {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.directions li {
+  margin-bottom: 6px;
+}
+
+</style>
+    <body>
+  <div>
+    <header class="title">
+      <nav>
+        <ul class="fira-sans-medium">
+          <li><a href="/">Home</a></li>
+          <li><a href="/recipes">Recipes</a></li>
+          <li><a href="/suggest">Suggest</a></li>
+        </ul>
+        <img src="WebLogo.png" width="268.8px" height="91px">
+      </nav>
+    </header>
+    <section class="hero sectionspe">
+      <div class="adjustcenter">
+        <p class="tagline shadows-into-light-regular">
+          One of the tastiest cake
+          <span class="homemade-apple-regular"> Ever</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="recipe">
+    <h1 class="recipe-site">Recipe World</h1>
+
+    <div class="recipe-card">
+        <h2 class="recipe-title">Magic Cake</h2>
+        <img src="Rainbow-1-scaled.webp" alt="Magic Cake" class="recipe-img">
+    <p class="recipe-desc">
+      Magic Cake is one of the tastiest cakes the world has ever known.
+      Few have tried it and lived to tell about it.
+      We also need to stress that whatever happens to you as a result of
+      consuming Magic Cake is not our responsibility.
+      See our legal page for more information.
+    </p>
+    <h3>Ingredients</h3>
+    <p class="ingredients">
+      2 eggs · 1 pound of sugar · 3 sticks of butter
+    </p>
+        <h3>Directions</h3>
+        <ol class="directions">
+            <li>Mix eggs, sugar, and butter in a large bowl.</li>
+            <li>Spread into a non-stick dish.</li>
+            <li>Bake at 350 degrees for 1 hour.</li>
+            <li>Let sit at room temperature for 20 minutes.</li>
+            <li>Eat and enjoy!</li>
+        </ol>
+    </div>
+    </section>
+
+  </div>
+</body>
+
+</html>
